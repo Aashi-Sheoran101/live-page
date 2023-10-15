@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+/* ROOT START */
+:root {
+    /* FONT FAMILY */
+    --ff-Poppins: 'Poppins', sans-serif;
+    /* FONT WEIGHT */
+    --fw-light: 300;
+    --fw-normal: 400;
+    --fw-medium: 500;
+    --fw-semi-bold: 600;
+    --fw-bold: 700;
+    --fw-extra-bold: 800;
+    --fw-dark: 900;
+    /* FONT SIZE */
+    --font-xs: 16px;
+    --font-md: 18px;
+    --font-lg: 20px;
+    --font-xl: 45px;
+    /* COLOR */
+    --color-white: #fff;
+    --color-black: #000;
+
+}
+
+/* Font Family */
+
+.ff_poppins {
+    font-family: var(--ff-Poppins);
+}
+
+/* DEFINE FONT SIZE */
+
+.font_16 {
+    font-size: var(--font-xs) !important;
+}
+
+.font_18 {
+    font-size: var(--font-md) !important;
+}
+
+.font_20 {
+    font-size: var(--font-lg) !important;
+}
+
+.font_45 {
+    font-size: var(--font-xl) !important;
+}
+
+/* Font Weight */
+
+.fw_300 {
+    font-weight: var(--fw-light);
+}
+
+.fw_400 {
+    font-weight: var(--fw-normal);
+}
+
+.fw_500 {
+    font-weight: var(--fw-medium);
+}
+
+.fw_600 {
+    font-weight: var(--fw-semi-bold);
+}
+
+.fw_700 {
+    font-weight: var(--fw-bold);
+}
+
+.fw_800 {
+    font-weight: var(--fw-extra-bold);
+}
+
+.fw_900 {
+    font-weight: var(--fw-dark);
+}
+
+
+/* FONT SIZE MEDIA QUERY */
+@media (min-width:1200px) {
+    :root {
+        /* FONT SIZE */
+        --font-xs: 16px;
+        --font-md: 16px;
+        --font-lg: 20px;
+        --font-xl: 45px;
+    }
+}
+
+@media (max-width: 1200px) {
+    :root {
+        /* FONT SIZE */
+        --font-xs: 16px;
+        --font-md: 16px;
+        --font-lg: 20px;
+        --font-xl: 45px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    :root {
+        /* FONT SIZE */
+        --font-xs: 14px;
+        --font-md: 16px;
+        --font-lg: 20px;
+        --font-xl: 39px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    :root {
+        /* FONT SIZE */
+        --font-xs: 13px;
+        --font-md: 15px;
+        --font-lg: 19px;
+        --font-xl: 37px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    :root {
+        /* FONT SIZE */
+        --font-xs: 13px;
+        --font-md: 15px;
+        --font-lg: 18px;
+        --font-xl: 35px;
+    }
+}
+
+/* DEFINR COLOR */
+
+.text_white {
+    color: var(--color-white) !important;
+}
+
+.text_black {
+    color: var(--color-black) !important;
+}
+
+/* OPACITY */
+
+.opacity07 {
+    opacity: 0.7;
+}
+
+.opacity03 {
+    opacity: 0.3;
+}
+
+.opacity08 {
+    opacity: 0.8;
+}

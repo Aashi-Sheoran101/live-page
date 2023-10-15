@@ -1,0 +1,731 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Spa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- link css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- link root -->
+    <link rel="stylesheet" href="./assets/css/root.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/images/png/favicon.png" type="image/x-icon">
+    <!-- Slider-link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- link aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body class="overflow-hidden overflow-x-hidden">
+    <span id="button">
+        <svg class="d-inline-block mb-0 d-flex align-items-center justify-content-center transition_03" width="30"
+            height="15" viewBox="0 0 48 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="transition_03" d="M44 24L24 4L4 24" stroke="white" stroke-width="7" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </svg>
+    </span>
+    <main>
+        <div id="box" class="overflow-hidden">
+            <div class="preloader-box">
+                <img class="mx-auto  loder-img loader-border" src="./assets/images/webp/favicon.webp"
+                    alt="logo-image" />
+            </div>
+        </div>
+        <div class="position-absolute hero_img mx-auto">
+            <img data-aos="zoom-out-down" data-aos-duration="3000" class="w-100 dashboard_img"
+                src="./assets/images/webp/Dashboard-Light.webp" alt="Dashboard">
+        </div>
+        <header class="nav_bg header_bg min-vh-100 position-relative overflow-hidden">
+            <div>
+                <img class="position-absolute left_img opacity_60" src="./assets/images/webp/hero-left.webp"
+                    alt=" hero-left">
+            </div>
+            <div>
+                <img class="position-absolute right_img opacity_60 d_none_3" src="./assets/images/webp/hero_right.webp"
+                    alt="hero_right">
+            </div>
+            <nav class="my_container">
+                <nav class="d-flex align-items-center justify-content-between pt-4 pb-4">
+                    <a href="#"><img class="nav_logo" src="./assets/images/webp/main-logo.webp" alt="main-logo"></a>
+                    <input type="checkbox" id="menuIcon" class="d-none">
+                    <ul class="d-flex align-items-center sm-screen gap-4 text-center mb-0">
+                        <li><a class="ff_poppins font_18 text_white fw_400 a_underline position-relative"
+                                href="#">Services</a></li>
+                        <li><a class="ff_poppins font_18 text_white fw_400 a_underline position-relative"
+                                href="#">Benefits</a></li>
+                        <li><a class="ff_poppins font_18 text_white fw_400 a_underline position-relative" href="#">Why
+                                Choose US</a></li>
+                        <li><a class="ff_poppins font_18 text_white fw_400 a_underline position-relative"
+                                href="#">FAQs</a></li>
+                    </ul>
+                    <div class="d-flex align-items-center">
+                        <button class="ff_poppins font_18 text_white fw_500 button_1 d-none d-sm-block me-4">Contact
+                            us</button>
+                        <label for="menuIcon" id="change" onclick="navresponsive()">
+                            <span class="bar1"></span>
+                            <span class="bar2"></span>
+                            <span class="bar3"></span>
+                        </label>
+                    </div>
+                </nav>
+            </nav>
+            <section class="pt-5 position-relative mt-4 overflow-hidden">
+                <div class="my_container pt-2">
+                    <div data-aos="fade-right" data-aos-duration="3000">
+                        <h1 class="ff_poppins fw_600 font_45 text_white mb-0 w_728 text-center mx-auto">Simplifying
+                            <span class="fw_400" style="font-style: italic;">Laptop Refresh</span>
+                            Deployments for Organizations
+                        </h1>
+                        <p data-aos="fade-up" data-aos-duration="3000"
+                            class="font_20 ff_poppins fw_400 text_white mb-0 w_615 text-center mx-auto mt-3">
+                            Revolutionizing
+                            the Way You Manage Laptop Refresh Projects</p>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <!-- Section-[Features & Benefits] -->
+        <section class="position-relative pt-5 pt-5 overflow-hidden">
+            <div>
+                <img class="position-absolute dot_position dot_animation" src="./assets/images/svg/benefits_dot.svg"
+                    alt="dot">
+            </div>
+            <div>
+                <img class="position-absolute features_position" src="./assets/images/webp/features_bg_img.webp"
+                    alt="benefits">
+            </div>
+            <div class="my_container pt-5 mt-5">
+                <div class="pt-5 mt-5">
+                    <div class="d_none_3 pt-5 mt-5">
+                        <h2 data-aos="zoom-out-up" data-aos-duration="3000" data-aos-offset="400"
+                            class="text-center fw_600 ff_poppins text_black mt-5 pt-5" style="font-size: 28px;">Features
+                            &
+                            <span class="fw_300" style="font-style: italic;">Benefits</span>
+                        </h2>
+                        <div class="row align-items-center mt_50">
+                            <div data-aos="fade-right" data-aos-duration="3000" data-aos-offset="400"
+                                class="col-xl-4 col-6 col-md-6 col-12 justify_center_2">
+                                <div class="card_border transition_03 cursor_pointer">
+                                    <div class="after_line position-relative d-flex flex-column gap-3">
+                                        <div class="text_box transition_03 me_60 ms_60 mb_34">
+                                            <h2
+                                                class="ff_poppins font_16 text_white transition_03 fw_600 mb-0 text-center">
+                                                Employee
+                                                Portal
+                                            </h2>
+                                        </div>
+                                        <div class="d-flex ms-3 me-2">
+                                            <div>
+                                                <img class="dots_border" src="./assets/images/webp/card_dots.webp"
+                                                    alt="dot">
+                                            </div>
+                                            <div class="ms-4">
+                                                <h2 class=" ff_poppins font_16 fw_500 text_black_2 mb-0 mt-1">Seamless
+                                                    Communication:</h2>
+                                                <p
+                                                    class="ff_poppins font_16 text_black_2 opacity07 fw_400 mb-0 mt-1 w_303">
+                                                    Automated notifications keep employees informed from request to
+                                                    exchange.</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex ms-3">
+                                            <div>
+                                                <img class="dots_border" src="./assets/images/webp/card_dots.webp"
+                                                    alt="dot">
+                                            </div>
+                                            <div class="ms-4">
+                                                <h2 class=" ff_poppins font_16 fw_500 text_black_2 mb-0 mt-1">
+                                                    User-Friendly
+                                                    Signup:</h2>
+                                                <p
+                                                    class="ff_poppins font_16 text_black_2 opacity07 fw_400 mb-0 mt-1 w_281">
+                                                    Employees
+                                                    easily indicate their preference for a new laptop.</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex ms-3 mb-5 me-2">
+                                            <div>
+                                                <img class="dots_border" src="./assets/images/webp/card_dots.webp"
+                                                    alt="dot">
+                                            </div>
+                                            <div class="ms-4">
+                                                <h2 class=" ff_poppins font_16 fw_500 text_black_2 mb-0 mt-1">Flexible
+                                                    Scheduling:</h2>
+                                                <p
+                                                    class="ff_poppins font_16 text_black_2 opacity07 fw_400 mb-0 mt-1 w_290">
+                                                    Convenient appointment scheduling and rescheduling rightfrom the
+                                                    portal.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-aos="fade-up" data-aos-duration="3000" data-aos-offset="400"
+                                class="col-xl-4 col-6 col-md-6 col-12 justify_center_2">
+                                <div class="card_border transition_03 cursor_pointer">
+                                    <div class="after_line position-relative d-flex flex-column gap-3">
+                                        <div class="text_box_2 me_60 ms_60 mb_34">
+                                            <h2
+                                                class="ff_poppins font_16 text_white transition_03 fw_600 mb-0 text-center">
+                                                Engineer Dashboard
+                                            </h2>
+                                        </div>
+                                        <div class="d-flex ms-3">
+                                            <div>
+                                                <img class="dots_border" src="./assets/images/webp/card_dots.webp"
+                                                    alt="dot">
+                                            </div>
+                                            <div class="ms-4">
+                                                <h2 class=" ff_poppins font_16 fw_500 text_black_2 mb-0 mt-1">Daily
+                                                    Handover Insights:</h2>
+                                                <p
+                                                    class="ff_poppins font_16 text_black_2 opacity07 fw_400 mb-0 mt-1 w_303">
+                                                    View all laptop handover appointments for the day at a glance.</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex ms-3">
+                                            <div>
+                                                <img class="dots_border" src="./assets/images/webp/card_dots.webp"
+                                                    alt="dot">
+                                            </div>
+                                            <div class="ms-4">
+                                                <h2 class=" ff_poppins font_16 fw_500 text_black_2 mb-0 mt-1">
+                                                    User-Friendly
+                                                    Signup:</h2>
+                                                <p
+                                                    class="ff_poppins font_16 text_black_2 opacity07 fw_400 mb-0 mt-1 w_270">
+                                                    Update laptop serial numbers manually, label exchanges, and track
+                                                    noshows..</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex ms-3 mb-5">
+                                            <div>
+                                                <img class="dots_border" src="./assets/images/webp/card_dots.webp"
+                                                    alt="dot">
+                                            </div>
+                                            <div class="ms-4">
+                                                <h2 class=" ff_poppins font_16 fw_500 text_black_2 mb-0 mt-1">Full
+                                                    Office
+                                                    Visibility:</h2>
+                                                <p
+                                                    class="ff_poppins font_16 text_black_2 opacity07 fw_400 mb-0 mt-1 w_290">
+                                                    Monitor all appointments for the office, regardless of the date.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-aos="fade-left" data-aos-duration="3000" data-aos-offset="400"
+                                class="col-xl-4 col-12 justify_center_2 mt_48">
+                                <div class="card_border transition_03 cursor_pointer">
+                                    <div class="after_line position-relative d-flex flex-column gap-3">
+                                        <div class="text_box_3 me_60 ms_60 mb_34">
+                                            <h2
+                                                class="ff_poppins font_16 text_white transition_03 fw_600 mb-0 text-center">
+                                                Stakeholder Dashboard
+                                            </h2>
+                                        </div>
+                                        <div class="d-flex ms-3">
+                                            <div>
+                                                <img class="dots_border" src="./assets/images/webp/card_dots.webp"
+                                                    alt="dot">
+                                            </div>
+                                            <div class="ms-4">
+                                                <h2 class=" ff_poppins font_16 fw_500 text_black_2 mb-0 mt-1">Deployment
+                                                    Overview:</h2>
+                                                <p
+                                                    class="ff_poppins font_16 text_black_2 opacity07 fw_400 mb-0 mt-1 w_303">
+                                                    Stay updated with holistic and individual office performance
+                                                    metrics.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex ms-3">
+                                            <div>
+                                                <img class="dots_border" src="./assets/images/webp/card_dots.webp"
+                                                    alt="dot">
+                                            </div>
+                                            <div class="ms-4">
+                                                <h2 class=" ff_poppins font_16 fw_500 text_black_2 mb-0 mt-1">Employee
+                                                    Tracking:</h2>
+                                                <p
+                                                    class="ff_poppins font_16 text_black_2 opacity07 fw_400 mb-0 mt-1 w_281">
+                                                    Identify completed exchanges
+                                                    and no-shows, making escalations swift and easy</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex ms-3 mb-5">
+                                            <div>
+                                                <img class="dots_border" src="./assets/images/webp/card_dots.webp"
+                                                    alt="dot">
+                                            </div>
+                                            <div class="ms-4">
+                                                <h2 class=" ff_poppins font_16 fw_500 text_black_2 mb-0 mt-1">Deployment
+                                                    Calendar:</h2>
+                                                <p
+                                                    class="ff_poppins font_16 text_black_2 opacity07 fw_400 mb-0 mt-1 w_303">
+                                                    Get a clear picture of current and upcoming deployments by office.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d_none_4">
+                        <h2 data-aos="zoom-out-up" data-aos-duration="3000"
+                            class="text-center fw_600 ff_poppins text_black" style="font-size: 28px;">Features & <span
+                                class="fw_300" style="font-style: italic;">Benefits</span></h2>
+                        <div data-aos="zoom-out-up" data-aos-duration="3000" class="single_item mt_50 cursor_pointer">
+                            <div class="card_border transition_03">
+                                <div class="after_line position-relative d-flex flex-column gap-3">
+                                    <div class="text_box me_60 ms_60 mb_34">
+                                        <h2 class="ff_poppins font_16 text_white transition_03 fw_600 mb-0 text-center">
+                                            Employee
+                                            Portal
+                                        </h2>
+                                    </div>
+                                    <div class="d-flex ms-3">
+                                        <div>
+                                            <img class="dots_border" src="./assets/images/webp/card_dots.webp"
+                                                alt="dot">
+                                        </div>
+                                        <div class="ms-4">
+                                            <h2 class=" ff_poppins font_16 fw_500 text_black_2 mb-0 mt-1">Seamless
+                                                Communication:</h2>
+                                            <p class="ff_poppins font_16 text_black_2 opacity07 fw_400 mb-0 mt-1 w_303">
+                                                Automated notifications keep employees informed from request to
+                                                exchange.</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex ms-3">
+                                        <div>
+                                            <img class="dots_border" src="./assets/images/webp/card_dots.webp"
+                                                alt="dot">
+                                        </div>
+                                        <div class="ms-4">
+                                            <h2 class=" ff_poppins font_16 fw_500 text_black_2 mb-0 mt-1">User-Friendly
+                                                Signup:</h2>
+                                            <p class="ff_poppins font_16 text_black_2 opacity07 fw_400 mb-0 mt-1 w_281">
+                                                Employees
+                                                easily indicate their preference for a new laptop.</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex ms-3 mb-5">
+                                        <div>
+                                            <img class="dots_border" src="./assets/images/webp/card_dots.webp"
+                                                alt="dot">
+                                        </div>
+                                        <div class="ms-4">
+                                            <h2 class=" ff_poppins font_16 fw_500 text_black_2 mb-0 mt-1">Flexible
+                                                Scheduling:</h2>
+                                            <p class="ff_poppins font_16 text_black_2 opacity07 fw_400 mb-0 mt-1 w_290">
+                                                Convenient appointment scheduling and rescheduling rightfrom the portal.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card_border transition_03">
+                                <div class="after_line position-relative d-flex flex-column gap-3">
+                                    <div class="text_box_2 me_60 ms_60 mb_34">
+                                        <h2 class="ff_poppins font_16 text_white transition_03 fw_600 mb-0 text-center">
+                                            Engineer Dashboard
+                                        </h2>
+                                    </div>
+                                    <div class="d-flex ms-3">
+                                        <div>
+                                            <img class="dots_border" src="./assets/images/webp/card_dots.webp"
+                                                alt="dot">
+                                        </div>
+                                        <div class="ms-4">
+                                            <h2 class=" ff_poppins font_16 fw_500 text_black_2 mb-0 mt-1">Daily
+                                                Handover Insights:</h2>
+                                            <p class="ff_poppins font_16 text_black_2 opacity07 fw_400 mb-0 mt-1 w_303">
+                                                View all laptop handover appointments for the day at a glance.</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex ms-3">
+                                        <div>
+                                            <img class="dots_border" src="./assets/images/webp/card_dots.webp"
+                                                alt="dot">
+                                        </div>
+                                        <div class="ms-4">
+                                            <h2 class=" ff_poppins font_16 fw_500 text_black_2 mb-0 mt-1">User-Friendly
+                                                Signup:</h2>
+                                            <p class="ff_poppins font_16 text_black_2 opacity07 fw_400 mb-0 mt-1 w_270">
+                                                Update laptop serial numbers manually, label exchanges, and track
+                                                noshows..</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex ms-3 mb-5">
+                                        <div>
+                                            <img class="dots_border" src="./assets/images/webp/card_dots.webp"
+                                                alt="dot">
+                                        </div>
+                                        <div class="ms-4">
+                                            <h2 class=" ff_poppins font_16 fw_500 text_black_2 mb-0 mt-1">Full Office
+                                                Visibility:</h2>
+                                            <p class="ff_poppins font_16 text_black_2 opacity07 fw_400 mb-0 mt-1 w_290">
+                                                Monitor all appointments for the office, regardless of the date.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card_border transition_03">
+                                <div class="after_line position-relative d-flex flex-column gap-3">
+                                    <div class="text_box_3 me_60 ms_60 mb_34">
+                                        <h2 class="ff_poppins font_16 text_white transition_03 fw_600 mb-0 text-center">
+                                            Stakeholder Dashboard
+                                        </h2>
+                                    </div>
+                                    <div class="d-flex ms-3">
+                                        <div>
+                                            <img class="dots_border" src="./assets/images/webp/card_dots.webp"
+                                                alt="dot">
+                                        </div>
+                                        <div class="ms-4">
+                                            <h2 class=" ff_poppins font_16 fw_500 text_black_2 mb-0 mt-1">Deployment
+                                                Overview:</h2>
+                                            <p class="ff_poppins font_16 text_black_2 opacity07 fw_400 mb-0 mt-1 w_303">
+                                                Stay updated with holistic and individual office performance metrics.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex ms-3">
+                                        <div>
+                                            <img class="dots_border" src="./assets/images/webp/card_dots.webp"
+                                                alt="dot">
+                                        </div>
+                                        <div class="ms-4">
+                                            <h2 class=" ff_poppins font_16 fw_500 text_black_2 mb-0 mt-1">Employee
+                                                Tracking:</h2>
+                                            <p class="ff_poppins font_16 text_black_2 opacity07 fw_400 mb-0 mt-1 w_281">
+                                                Identify completed exchanges
+                                                and no-shows, making escalations swift and easy</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex ms-3 mb-5">
+                                        <div>
+                                            <img class="dots_border" src="./assets/images/webp/card_dots.webp"
+                                                alt="dot">
+                                        </div>
+                                        <div class="ms-4">
+                                            <h2 class=" ff_poppins font_16 fw_500 text_black_2 mb-0 mt-1">Deployment
+                                                Calendar:</h2>
+                                            <p class="ff_poppins font_16 text_black_2 opacity07 fw_400 mb-0 mt-1 w_303">
+                                                Get a clear picture of current and upcoming deployments by office.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" d-flex justify-content-center mt_30 gap-3 d_none_4">
+                        <svg class="arrow transition_03 r_arrow" width="9" height="17" viewBox="0 0 9 17" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.875 1.75L1.125 8.5L7.875 15.25" stroke="#646060" stroke-width="2.25"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg class="arrow transition_03 l_arrow" width="10" height="16" viewBox="0 0 10 16" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.625 14.75L8.375 8L1.625 1.25" stroke="#646060" stroke-width="2.25"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section-[About Spa] -->
+        <section class="about_bg mt_200 overflow-hidden">
+            <div class="my_container position-relative">
+                <div>
+                    <img class="position-absolute dot_position_2 dot_animation" src="./assets/images/webp/dot_2.webp"
+                        alt="dot">
+                </div>
+                <div class="row pt_175 pb_175 justify-content-between align-items-center">
+                    <div data-aos="fade-right" data-aos-duration="3000" class=" col-lg-5 order-first order-md-0">
+                        <h2 class="font_45 ff_poppins fw_600 text_black mb-0 text_center">About <span
+                                class="fw_400">SPA</span></h2>
+                        <p class="ff_poppins fw_400 font_16 text_black opacity07 w_490 mb-0 mt-3 text_center mx-auto">
+                            Dui nulla duis
+                            tristique eu sed sit in ut. Dictum felis commodo eu nulla. Adipiscing sed eu nisi justo id
+                            pharetra
+                            rutrum. Morbi nisi facilisi senectus pulvinar in enim feugiat eros tortor. Eget senectus
+                            tellus nunc vulputate volutpat.</p>
+                        <p class="ff_poppins fw_400 font_16 text_black opacity07 w_490_2 mb-0 mt-3 text_center mx-auto">
+                            Laoreet pellentesque
+                            augue ipsum urna potenti elementum. Tincidunt ipsum at suspendisse posuere scelerisque sit
+                            elit.
+                            Cras tellus id odio amet pellentesque arcu.</p>
+                        <div class=" text_center">
+                            <button class="ff_poppins font_18 text_white fw_500 button_1 mt-4">Learn More</button>
+                        </div>
+                    </div>
+                    <div data-aos="fade-left" data-aos-duration="3000" class="col-lg-6">
+                        <img class="w-100 mt_58" src="./assets/images/webp/full-mac.webp" alt="mac-book">
+                    </div>
+                </div>
+                <div>
+                    <img class="position-absolute w-100 bubble_w bubble_position bubble_animation"
+                        src="./assets/images/webp/mac-bubble.webp" alt="mac-bubble">
+                </div>
+            </div>
+        </section>
+        <!-- Section-[Why Choose Spa?] -->
+        <section class="pb_125 overflow-hidden">
+            <div class="my_container position-relative">
+                <div>
+                    <h2 data-aos="zoom-out-up" data-aos-duration="3000"
+                        class="ff_poppins fw_600 font_45 mb-0 text_black text-center mt_136">Why Choose <span
+                            style="font-style: italic;" class="fw_400">SPA?</span></h2>
+                </div>
+                <div data-aos="zoom-in-up" data-aos-duration="3000" class=" text-center">
+                    <img class="w-100 logo_w mt_111 d_none_section" src="./assets/images/webp/choose_logo.webp"
+                        alt="choose_logo">
+                </div>
+                <div class="d_felx d_none d_none_section">
+                    <div data-aos="fade-right" data-aos-duration="3000"
+                        class="d-flex gap_32 position-absolute solution_position">
+                        <div>
+                            <h2 class="ff_poppins font_16 text_black mb-0 fw_500 text_right">Comprehensive Solution</h2>
+                            <p class="ff_poppins font_16 text_black fw_400 mb-0 opacity07 w_303 mt_10 text_right">SPA
+                                handles
+                                every aspect of your
+                                laptop refresh project, eliminating the need for multiple tools
+                                and manual
+                                interventions.</p>
+                        </div>
+                        <div><img src="./assets/images/webp/soluction.webp" alt="improvesvg"></div>
+                    </div>
+                    <div data-aos="fade-right" data-aos-duration="2000"
+                        class="d-flex gap_32 position-absolute improve_position">
+                        <div>
+                            <h2 class="ff_poppins font_16 text_black mb-0 fw_500 text_right">Improved Accountability:
+                            </h2>
+                            <p class="ff_poppins font_16 text_black fw_400 mb-0 opacity07 w_303 mt_10 text_right">With
+                                SPA,
+                                stakeholders and office managers have access to real-time data, ensuring that every
+                                employee
+                                exchange is
+                                accounted for.</p>
+                        </div>
+                        <div><img src="./assets/images/webp/improvesvg.webp" alt="improvesvg"></div>
+                    </div>
+                    <div data-aos="fade-left" data-aos-duration="3000"
+                        class="d-flex gap_32 position-absolute time_position">
+                        <div><img src="./assets/images/webp/time.webp" alt="improvesvg"></div>
+                        <div>
+                            <h2 class="ff_poppins font_16 text_black mb-0 fw_500">Time & Cost Efficiency</h2>
+                            <p class="ff_poppins font_16 text_black fw_400 mb-0 opacity07 w_303 mt_10">Automated
+                                processes mean less manual
+                                work, leading to faster deployments and cost savings.</p>
+                        </div>
+                    </div>
+                    <div data-aos="fade-left" data-aos-duration="3000"
+                        class="d-flex gap_32 position-absolute Communication_position">
+                        <div><img src="./assets/images/webp/msg.webp" alt="improvesvg"></div>
+                        <div>
+                            <h2 class="ff_poppins font_16 text_black mb-0 fw_500">Enhanced Communication</h2>
+                            <p class="ff_poppins font_16 text_black fw_400 mb-0 opacity07 w_303 mt_10">Whether it's
+                                rescheduling, reminders,
+                                or updates, SPA ensures everyone is on the same page.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column gap_32 mt_30 d_none_2">
+                    <div data-aos="fade-right" data-aos-offset="200" class="d-flex gap_15 justify-content-center">
+                        <div><img src="./assets/images/webp/soluction.webp" alt="improvesvg"></div>
+                        <div>
+                            <h2 class="ff_poppins font_16 text_black mb-0 fw_500 ">Comprehensive Solution</h2>
+                            <p class="ff_poppins font_16 text_black fw_400 mb-0 opacity07 w_257 mt_10">SPA
+                                handles
+                                every aspect of your
+                                laptop refresh project, eliminating the need for multiple tools
+                                and manual
+                                interventions.</p>
+                        </div>
+                    </div>
+                    <div data-aos="fade-right" data-aos-offset="200" class="d-flex gap_15 justify-content-center">
+                        <div><img src="./assets/images/webp/time.webp" alt="improvesvg"></div>
+                        <div>
+                            <h2 class="ff_poppins font_16 text_black mb-0 fw_500 ">Time & Cost Efficiency</h2>
+                            <p class="ff_poppins font_16 text_black fw_400 mb-0 opacity07 w_259 mt_10">Automated
+                                processes mean less manual work, leading to faster deployments and cost savings.</p>
+                        </div>
+                    </div>
+                    <div data-aos="fade-right" data-aos-offset="200" class="d-flex gap_15 justify-content-center">
+                        <div><img src="./assets/images/webp/msg.webp" alt="improvesvg"></div>
+                        <div>
+                            <h2 class="ff_poppins font_16 text_black mb-0 fw_500 ">Enhanced Communication</h2>
+                            <p class="ff_poppins font_16 text_black fw_400 mb-0 opacity07 w_259 mt_10">Whether it's
+                                rescheduling, reminders, or updates, SPA ensures everyone is on the same page.</p>
+                        </div>
+                    </div>
+                    <div data-aos="fade-right" data-aos-offset="200" class="d-flex gap_15 justify-content-center">
+                        <div><img src="./assets/images/webp/improvesvg.webp" alt="improvesvg"></div>
+                        <div>
+                            <h2 class="ff_poppins font_16 text_black mb-0 fw_500 ">Improved Accountability:</h2>
+                            <p class="ff_poppins font_16 text_black fw_400 mb-0 opacity07 w_257 mt_10">With SPA,
+                                stakeholders and office managers have access to real-time data, ensuring that every
+                                employee exchange is
+                                accounted for.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section-[Promo Video] -->
+        <section class="position-relative overflow-hidden">
+            <div class="my_container">
+                <div class="mt_148_2">
+                    <h2 class="ff_poppins fw_600 font_45 mb-0 text_black text-center">Watch Promo <span class="fw_400 "
+                            style="font-style: italic;">Video</span></h2>
+                </div>
+                <div class="d-flex justify-content-center position-relative mt_56_2">
+                    <video class="w-100 video_img" onclick="playVideo()" src="./assets/video/radial_code.mp4" controls
+                        poster="./assets/images/png/video.png"></video>
+                    <img id="video_play_btn"
+                        class="position-absolute promo_video_play_btn w-100 bottom-0 translate-middle-x"
+                        src="./assets/images/webp/watch_promo_video_play_btn.webp" alt="play">
+                </div>
+            </div>
+            <div class="position-absolute bubble_position_3">
+                <img class="bubble_animation " src="./assets/images/webp/bubble-video.webp" alt="bubble">
+            </div>
+        </section>
+        <!-- Section-[Your Partner] -->
+        <section class="about_bg overflow-hidden  mt_148_3">
+            <div class="my_container position-relative">
+                <div class="row pt_125 pb_125 justify-content-between align-items-center mt_148">
+                    <div data-aos="fade-right" data-aos-duration="3000" class="col-lg-6 order-last order-lg-first">
+                        <img class="w-100 mt_58" src="./assets/images/webp/macbook-2.webp" alt="mac-book">
+                    </div>
+                    <div data-aos="fade-left" data-aos-duration="3000" class="col-lg-5 order-first order-md-0">
+                        <h2 class="font_45 ff_poppins fw_600 text_black mb-0 text_center w_529 mx-auto">Your Partner in
+                            Streamlined
+                            Laptop <span style="font-style: italic;" class="fw_400">Refresh Deployments</span>
+                        </h2>
+                        <p class="ff_poppins fw_400 font_16 text_black opacity07 w_529 mb-0 mt-3 text_center mx-auto">
+                            Equip your organization with the best. Experience hassle-free management and stakeholder
+                            satisfaction with SPA.</p>
+                    </div>
+                    <div>
+                        <img class="position-absolute w-100 bubble_w_2 bubble_position_2 bubble_animation"
+                            src="./assets/images/webp/bubble_2.webp" alt="mac-bubble">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <section class="position-relative overflow-hidden">
+            <div class="my_container">
+                <div class="row justify-content-between pt_124 align-items-center">
+                    <div class="col-lg-4 col-md-7 col-12 justify_center order-1">
+                        <div class="text_center_2">
+                            <img src="./assets/images/webp/footer_logo.webp" alt="footer_logo">
+                            <p class="ff_poppins fw_400 font_16 text_black opacity07 w_336 mb-0 mt-3">Equip your
+                                organization with the best. Experience hassle-free management and stakeholder
+                                satisfaction with SPA.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 justify_center  order-3 order-lg-2">
+                        <div class="input_box w-100 mt-5 mt-lg-0">
+                            <div class="d-flex gap-2">
+                                <div>
+                                    <p class="ff_poppins font_16 fw_400 mb-0 text_white">First Name</p>
+                                    <input type="email" class="input_firstname mt-1 w-100">
+                                </div>
+                                <div>
+                                    <p class="ff_poppins font_16 fw_400 mb-0 text_white">Last Name</p>
+                                    <input type="email" class="input_firstname mt-1 w-100">
+                                </div>
+                            </div>
+                            <div>
+                                <p class="ff_poppins font_16 fw_400 mb-0 text_white mt-2">Email</p>
+                                <input type="email" class=" input_email w-100">
+                            </div>
+                            <button class="ff_poppins font_16 text_white fw_500 button_2 mt-3">Submit</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 justify_center mt_35 order-2 order-lg-3 justify_start">
+                        <div class="d-flex">
+                            <ul class="mb-0 ps-0">
+                                <li><a href="#" class="ff_poppins fw_600 font_18 text_black">Links</a></li>
+                                <li><a href="#"
+                                        class="ff_poppins fw_400 font_16 text_black opacity07 mt-2 li_underline position-relative">Assignment</a></li>
+                                <li><a href="#" class="ff_poppins fw_400 font_16 text_black opacity07 mt-2 li_underline position-relative">Product
+                                        Package</a></li>
+                                <li><a href="#" class="ff_poppins fw_400 font_16 text_black opacity07 mt-2 li_underline position-relative">Journey</a>
+                                </li>
+                                <li><a href="#" class="ff_poppins fw_400 font_16 text_black opacity07 mt-2 li_underline position-relative">Contact
+                                        Us</a></li>
+                                <li><a href="#" class="ff_poppins fw_400 font_16 text_black opacity07 mt-2 li_underline position-relative">Programs</a>
+                                </li>
+                                <li><a href="#" class="ff_poppins fw_400 font_16 text_black opacity07 mt-2 li_underline position-relative">Terms of
+                                        Service</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#" class="ff_poppins fw_600 font_18 text_black">Other Links</a></li>
+                                <li><a href="#" class="ff_poppins fw_400 font_16 text_black opacity07 mt-2 li_underline position-relative">Privacy
+                                        Policy</a></li>
+                                <li><a href="#" class="ff_poppins fw_400 font_16 text_black opacity07 mt-2 li_underline position-relative">Terms of
+                                        Service</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_line mt_63"></div>
+            <div class="my_container">
+                <p class="ff_poppins font_16 fw_400 text_black opacity07 text-center mb-0 pb-2 pt-3">© 2023 SPA All
+                    rights reserved</p>
+            </div>
+            <div class="position-absolute background_footer">
+                <img class="w_158" src="./assets/images/webp/footer_background.webp" alt="footer_background">
+            </div>
+            <div class="position-absolute background_footer_2">
+                <img class="w_256" src="./assets/images/webp/footer_background-rigth.webp" alt="footer_background">
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- JQUEARY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- link js -->
+    <script src="./assets/js/app.js"></script>
+    <!-- link aos js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
