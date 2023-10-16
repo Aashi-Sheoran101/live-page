@@ -518,6 +518,8 @@ input[type="checkbox"] {
     min-height: 100vh;
     width: 100%;
     top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     -webkit-box-align: center;
     align-items: center;
@@ -1008,6 +1010,10 @@ input[type="checkbox"] {
     .dot_position {
         right: 9%;
         bottom: 73%;
+    }
+
+    .mt_148 {
+        margin-top: 0;
     }
 }
 
